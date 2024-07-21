@@ -6,19 +6,20 @@
 
 
 <body>
-<center> <h1> G-Motion </h1></center>
 
+<center> <h1 id="demo" onclick="myFunction()"> G-Motion </h1> </center>
+
+<script>
+var snd = new Audio("nle.mp3");
+
+function myFunction() {
+  document.getElementById("demo").style.color = "red";
+  snd.play();
+}
+
+</script>
 
 <marquee> <h2>WORK IN PROGRESS</h2></marquee>
-
-
-<p>Click on the play button to play a sound:</p>
-
-<audio controls>
-  <source src="nle.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-
 
 </body>
 
